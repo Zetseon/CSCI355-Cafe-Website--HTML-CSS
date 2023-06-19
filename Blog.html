@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+    <header class ="header">
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+
+            <a href="menu.html">Menu</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="Blog.html">Online Blog</a>
+            <a href="index.html#AboutUs">About Us</a>
+            <a href="index.html#Subscribe">Subscribe</a>
+        </nav>
+
+        <a href="index.html" class="logo">
+            <img src="./assets/OfficialLogo.png" alt="logo" width="150">
+        </a>
+
+        <div class="icons">
+            <a href="https://instagram.com"><img src="./assets/socials/instagram.png" alt="" width=20px height=20px></a>
+            <a href="https://twitter.com"><img src="./assets//socials/twitter.png" alt="" width=20px height=20px></a>
+            <a href="https://facebook.com"><img src="./assets/socials/facebook.png" alt="" width=20px height=20px></a>
+        </div>
+        
+        
+        
+        
+        <button class="cart-btn" onclick="toggleCart()">Cart</button>
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+                <!-- List of items in the cart -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <td>Mocha</td>
+                            <td>2</td>
+                            <td>5.99</td>
+                            <td>11.98</td>
+                        </tbody>
+                        <tbody>
+                            <td>Cheesecale</td>
+                            <td>1</td>
+                            <td>8.99</td>
+                            <td>8.99</td>
+                        </tbody>
+                        <tbody>
+                            <td>Chicken Sandwich</td>
+                            <td>1</td>
+                            <td>10.99</td>
+                            <td>10.99</td>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">Total:</td>
+                                <td>65.96</td>
+                            </tr>
+                        </tfoot>
+                </table>
+            <button class="close-btn" onclick="toggleCart()">Close</button>
+        </div>
+    </header>
+
+    <section class="blog" id="blog">
+        <h1 class="heading">our blogs</h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/background/blog1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">Our Coffee</a>
+                        <span>By Parth / April 2023</span>
+                        <p>355 Coffee is made from fresh real ingredients...</p>
+                        <a href="#" class="blog-btn">read more</a>
+                    </div>
+                </div>
+            
+
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/background/blog2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">New Location</a>
+                        <span>By Nate / March 2023</span>
+                        <p>355 Coffee is now opening a brand new location at...</p>
+                        <a href="#" class="blog-btn">read more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="box-container">
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/background/blog3.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">BRAND NEW EVENT</a>
+                        <span>By Rose / January 2023</span>
+                        <p>Stay tuned to have a chance at winning...</p>
+                        <a href="#" class="blog-btn">read more</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="image">
+                        <img src="./assets/background/blog4.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <a href="#" class="title">NEW FLAVORS</a>
+                        <span>By Amin / December 2022</span>
+                        <p>Try our new cinnamon infused coffee with...</p>
+                        <a href="#" class="blog-btn">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body> 
+    <script src ="script.js"></script>
+</html>

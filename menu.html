@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>355 Menu</title>
+    
+  </head>
+
+  <body>
+<header class ="header">
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="Blog.html">Online Blog</a>
+            <a href="index.html#AboutUs">About Us</a>
+            <a href="index.html#Subscribe">Subscribe</a>
+        </nav>
+
+        <a href="index.html" class="logo">
+          <img src="./assets/OfficialLogo.png" alt="logo" width="150">
+      </a>
+
+      <div class="icons">
+          <a href="https://instagram.com"><img src="./assets/socials/instagram.png" alt="" width=20px height=20px></a>
+          <a href="https://twitter.com"><img src="./assets//socials/twitter.png" alt="" width=20px height=20px></a>
+          <a href="https://facebook.com"><img src="./assets/socials/facebook.png" alt="" width=20px height=20px></a>
+      </div>
+      
+      
+        
+        
+        <button class="cart-btn" onclick="toggleCart()">Cart</button>
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+                <!-- List of items in the cart -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <td>Mocha</td>
+                        <td>2</td>
+                        <td>5.99</td>
+                        <td>11.98</td>
+                    </tbody>
+                    <tbody>
+                        <td>Cheesecale</td>
+                        <td>1</td>
+                        <td>8.99</td>
+                        <td>8.99</td>
+                    </tbody>
+                    <tbody>
+                        <td>Chicken Sandwich</td>
+                        <td>1</td>
+                        <td>10.99</td>
+                        <td>10.99</td>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total:</td>
+                            <td>65.96</td>
+                        </tr>
+                    </tfoot>
+            </table>
+            <button class="close-btn" onclick="toggleCart()">Close</button>
+        </div>
+    </header>
+    <!--MENU-->
+    <!--DRINKS-->
+    <h1 class="menu-cat"> Coffee</h1> 
+    <section class="menu">
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="mheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="mtitle"> &nbsp; </h3>
+          <p class="item-description" id="1desription">
+            A delicious Mocha made up of espresso, milk, and chocolate.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="mprice"> $5.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="eheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="etitle"> &nbsp; </h3>
+          <p class="item-description" id="2desription">
+            A strong, sweet, and smooth Espresso to wake your palete.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="eprice"> $3.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="cheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="ctitle"> &nbsp; </h3>
+          <p class="item-description" id="3desription">
+            A perfect balance of espresso, steamed milk, and foam.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="cprice"> $7.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="lheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="ltitle"> &nbsp; </h3>
+          <p class="item-description" id="4desription">
+            A rich creamy Latte, with the subtle taste of Espresso.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="lprice"> $7.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+    </section>
+    <!--DRINKS-->
+
+    <!--DESSERTS-->
+    <h1 class="menu-cat"> Desserts</h1> 
+    <section class="menu">
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="cheeseheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="cheesetitle">&nbsp;</h3>
+          <p class="item-description" id="5desription">
+            Creamy vanilla cheesecake with a crunchy base.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="cheeseprice"> $8.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="mousseheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="moussetitle">&nbsp;</h3>
+          <p class="item-description" id="6desription">
+            Soft, and fluffy mousse that melts in your mouth.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="mousseprice"> $6.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="strawheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="strawtitle">&nbsp;</h3>
+          <p class="item-description" id="7desription">
+            Classic strawberry with fresh cream sponge cake.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="strawprice"> $10.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="macaroonheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="macaroontitle">&nbsp;</h3>
+          <p class="item-description" id="8desription">
+            A daily selection of flavors decided by the chef.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="macprice"> $9.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+    </section>
+    <!--DESSERTS-->
+    
+    <!--FOOD-->
+    <h1 class="menu-cat"> Entrees</h1> 
+    <section class="menu">
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="sandheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="sandtitle">&nbsp;</h3>
+          <p class="item-description" id="9desription">
+            Grilled chicken, special sauce, tomatoes, arugula and onions.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="sandprice"> $10.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="saladheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="saladtitle">&nbsp;</h3>
+          <p class="item-description" id="10desription">
+            Diced fresh vegetables with special green goddess dressing.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="saladprice"> $15.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="paniniheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="paninititle">&nbsp;</h3>
+          <p class="item-description" id="11desription">
+            Tomato, basil, and fresh mozzerella panini with balsamic glaze.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="paniniprice"> $11.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+      <!--ONE CARD -->
+      <div class="card">
+        <div class="card-header animated-bg" id="vegomlheader">
+          &nbsp;
+        </div>
+        <div class="card-content">
+          <h3 class="card-title animated-bg animated-by-text" id="vegomltitle">&nbsp;</h3>
+          <p class="item-description" id="12desription">
+            Omelette with cheese, tomatoes, spinach and onions.
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+            <span class="animated-bg animated-bg-text">&nbsp; </span>
+          </p>
+          <div class="price">
+            <strong class="animated-bg animated-bg-text" id="vegomlprice"> $12.99 </strong>
+            <button class="button" type="button"> Add to Cart </button>
+          </div>
+        </div>
+      </div>
+      <!--ONE CARD -->
+    </section>
+    <!--FOOD-->
+    
+    <!--MENU--> 
+   <script src="script.js"></script>
+   <script type="text/javascript" src="menuani.js"></script>
+  </body>
+
+</html>

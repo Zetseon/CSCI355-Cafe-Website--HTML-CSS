@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body class="contactus">
+    <header class ="header">
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+
+            <a href="menu.html">Menu</a>
+            <a href="ContactUs.html">Contact Us</a>
+            <a href="Blog.html">Online Blog</a>
+            <a href="index.html#AboutUs">About Us</a>
+            <a href="index.html#Subscribe">Subscribe</a>
+        </nav>
+
+        <a href="index.html" class="logo">
+            <img src="./assets/OfficialLogo.png" alt="logo" width="150">
+        </a>
+
+        <div class="icons">
+            <a href="https://instagram.com"><img src="./assets/socials/instagram.png" alt="" width=20px height=20px></a>
+            <a href="https://twitter.com"><img src="./assets//socials/twitter.png" alt="" width=20px height=20px></a>
+            <a href="https://facebook.com"><img src="./assets/socials/facebook.png" alt="" width=20px height=20px></a>
+        </div>
+        
+        
+        <button class="cart-btn" onclick="toggleCart()">Cart</button>
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+                <!-- List of items in the cart -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <td>Mocha</td>
+                        <td>2</td>
+                        <td>5.99</td>
+                        <td>11.98</td>
+                    </tbody>
+                    <tbody>
+                        <td>Cheesecale</td>
+                        <td>1</td>
+                        <td>8.99</td>
+                        <td>8.99</td>
+                    </tbody>
+                    <tbody>
+                        <td>Chicken Sandwich</td>
+                        <td>1</td>
+                        <td>10.99</td>
+                        <td>10.99</td>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total:</td>
+                            <td>65.96</td>
+                        </tr>
+                    </tfoot>
+            </table>
+            <button class="close-btn" onclick="toggleCart()">Close</button>
+        </div>
+    </header>
+        <div class="content-collapse">
+            <h1 class= 'circle-sketch-highlight'>Frequently Asked Questions</h1>
+            <div class="faq-container">
+                <div class="faq">
+                    <h3 class="faq-title">Where are you located?</h3>
+                    <p class="faq-text">123 Fake st. Beverly Hills, CA 90210</p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down" type="button"></i>
+                        <i class="fas fa-times" type="button"></i>
+                    </button>
+                </div>
+                <div class="faq">
+                    <h3 class="faq-title">Where can you contact us?</h3>
+                    <p class="faq-text">You can call us at 000-000-0000 for inquires, you can also contact us through our social medias: <span><a href="https://twitter.com/"> Twitter</a> <a href="https://Instagram.com"> Instagram</a><a href="https://Facebook.com"> facebook</a></span> </p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down" type="button"></i>
+                        <i class="fas fa-times" type="button"></i>
+                    </button>
+                </div>
+                <div class="faq" >
+                    <h3 class="faq-title">Do we provide internet?</h3>
+                    <p class="faq-text">Our cafe provides with wifi with any purchase inside the cafe!</p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down" type="button"></i>
+                        <i class="fas fa-times" type="button"></i>
+                    </button>
+                </div>
+                <div class="faq">
+                    <h3 class="faq-title">Is our cafe pet friendly?</h3>
+                    <p class="faq-text">Yes, we have pet playground and also offer delicious pet treats!</p>
+                    <button class="faq-toggle">
+                        <i class="fas fa-chevron-down" type="button"></i>
+                        <i class="fas fa-times" type="button"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

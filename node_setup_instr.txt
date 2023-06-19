@@ -1,0 +1,28 @@
+https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs
+
+In cmd: 
+
+node -v
+
+ - download node.js (there are commands for it too)
+
+npm -v
+
+cd to your directory where your project folder is then use these ->
+
+npm init
+
+npm install express
+
+npm install eslint --save-dev
+
+npm install morgan
+
+
+write the server code
+
+Start the server:
+
+node server.js //(or the server file) will start the server on the port specified
+
+Going to localhost:3000 // will go to web

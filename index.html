@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compoatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class ="header">
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="ContactUs.html">Contact Us</a>
+        <a href="Blog.html">Online Blog</a>
+        <a href="index.html#AboutUs">About Us</a>
+        <a href="#Subscribe">Subscribe</a>
+    </nav>
+
+    <a href="#" class="logo">
+        <img src="./assets/OfficialLogo.png" alt="logo" width="150">
+    </a>
+
+
+    <div class="icons">
+      <a href="https://instagram.com"><img src="./assets/socials/instagram.png" alt="" width=20px height=20px></a>
+      <a href="https://twitter.com"><img src="./assets//socials/twitter.png" alt="" width=20px height=20px></a>
+      <a href="https://facebook.com"><img src="./assets/socials/facebook.png" alt="" width=20px height=20px></a>
+  </div>
+  
+    
+    
+    <button class="cart-btn" onclick="toggleCart()">Cart</button>
+    <div class="cart">
+      <h2>Shopping Cart</h2>
+          <!-- List of items in the cart -->
+      <table>
+          <thead>
+              <tr>
+                  <th>Item</th>
+                  <th>Quantity</th>
+                  <th>Price</th>
+                  <th>Subtotal</th>
+              </tr>
+          </thead>
+              <tbody>
+                  <td>Mocha</td>
+                  <td>2</td>
+                  <td>5.99</td>
+                  <td>11.98</td>
+              </tbody>
+              <tbody>
+                  <td>Cheesecale</td>
+                  <td>1</td>
+                  <td>8.99</td>
+                  <td>8.99</td>
+              </tbody>
+              <tbody>
+                  <td>Chicken Sandwich</td>
+                  <td>1</td>
+                  <td>10.99</td>
+                  <td>10.99</td>
+              </tbody>
+              <tfoot>
+                  <tr>
+                      <td colspan="3">Total:</td>
+                      <td>65.96</td>
+                  </tr>
+              </tfoot>
+      </table>
+      <button class="close-btn" onclick="toggleCart()">Close</button>
+  </div>
+</header>
+
+<!--Home Section Starts-->
+<section class="home" id="Home">
+    <div class="Content">
+      <h3 id="boo">355 Sunlight Café</h3>
+            <P>A warm place to start your day, or unwind after a long day.</P>
+            <br>
+            <br>
+            <br>
+            <button class="try-btn" onclick ="window.location.href ='menu.html' ">See Our Menu</button>
+      </div>
+
+</section>
+<!--Home Section Ends-->
+<!--About US Starts-->
+
+<section class="about" id="AboutUs">
+
+
+  <div class="row">
+
+    <div class="image">
+      
+    </div>
+
+    <div class="Content">
+      <h3>Who we Are</h3>
+      <p>355 Coffee is a small coffee shop that offers high-quality coffee and exceptional customer service. They source the finest beans from around the world and create a warm and welcoming environment for customers to relax and enjoy their coffee. 355 Coffee is more than just a coffee shop; it's a community of passionate coffee lovers sharing their love of coffee with others.</p>
+    </div>
+  </div>
+
+</section>
+
+<!--About US Section Ends--> 
+
+<section class="subscribe" id="Subscribe">
+  <div class="Content">
+    <h3>Thank you for Sipping 355 Coffee!</h3>
+    <h1>Join Our<br>Newsletter</h1>
+    <p>SUBSCRIBE NOW</p>
+    <form name="submit-to-google-sheet">
+      <input type="email" name="Email" placeholder="Your Email Address" required>
+      <button type="submit"><img src="./assets/background/send.png" width="30px"></button>
+    </form>
+    <span id="msg"></span>
+  </div>
+</section>
+  <script src ="./script.js"></script>
+</body>
+</html>
